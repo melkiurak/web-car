@@ -1,0 +1,26 @@
+.login{
+    @apply pt-10 w-account my-10 mx-auto flex flex-col gap-10 text-WhiteGray border-2 border-boreder p-8 ;
+    .title{
+        @apply text-center;
+    }
+    .form{
+        @apply flex flex-col gap-9;
+        .input{
+            input{
+                @apply h-8 rounded-3xl bg-Nightblue border-none w-full pl-3;
+            }
+            input:focus{
+                @apply outline-none border-4 border-inputBorder;
+            }
+            .alert{
+                @apply text-red-800;
+            }
+        }
+        .sending{
+        @apply h-10 rounded-3xl border-none bg-RegisterInput text-WhiteGray cursor-pointer transition-all;
+        }
+        .sending:hover{
+        @apply bg-RegisterInputFocus;
+        }
+    }
+}

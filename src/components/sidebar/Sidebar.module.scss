@@ -1,0 +1,34 @@
+.sidebar {
+  @apply  h-screen text-AgateGrey;
+  .navigation {
+    @apply flex flex-col pl-4;
+  }
+}
+.menu {
+  @apply flex flex-col gap-5 w-full mt-8;
+  p{
+    @apply text-xl pl-8;
+  }
+  .item{
+    @apply flex rounded-lg h-12;
+    &:hover{
+      @apply bg-BlueKryola;
+    }
+    a{
+      @apply cursor-pointer w-full flex items-center gap-4 pl-8;
+    }
+    img{
+      @apply w-10 h-10 filter brightness-0 invert;
+    
+    }
+  }
+  .icon{
+    @apply text-4xl;    
+  }
+}
+.logo {
+  @apply flex  justify-center mt-5 gap-5;
+  .icons{
+    @apply text-4xl;
+  }
+}

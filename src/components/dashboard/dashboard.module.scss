@@ -1,0 +1,53 @@
+.dashboard{
+    @apply mt-8 mr-8;
+    .header{
+        @apply px-8 h-dashboard flex items-center bg-Nightblue rounded-t-2xl gap-6;
+        .title{
+            @apply font-medium text-white flex-auto;
+        }
+        .from{
+            @apply relative w-dashboard ;
+            input{
+                @apply cursor-pointer w-full h-10 text-PlatinumGray bg-InputBlakc rounded-3xl border-none pl-10;
+            }
+            button{
+                @apply cursor-pointer flex items-center absolute top-2 right-1.5 w-6 h-6 bg-BlueKryola rounded-full border-none leading-9;
+                .icon{
+                    @apply  text-IconWhite text-2xl p-0.5;
+                }
+            }
+        }
+        .account{
+            @apply flex gap-3 w-Btn;
+            button{
+                @apply w-full h-10 border-none rounded-2xl;
+            }
+            .accountbtn{
+                @apply  text-base font-semibold text-white cursor-pointer h-10 text-center bg-SizeBtn border-none rounded-3xl transition-all;
+            }
+            .accountbtn:hover {
+                @apply bg-PositionBtn;
+            }
+            .accountbtn:focus {
+                @apply outline-none;
+            }              
+            .accountbtn {
+                background-image: linear-gradient(to right, #667eea, #764ba2, #6b8dd6, #8e37d7);
+                box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+            }
+        }
+    }
+}
+.button{
+    @apply w-Btn text-base font-semibold text-white cursor-pointer border-none h-10 text-center bg-SizeBtn rounded-3xl transition-all;
+}
+.button:hover {
+    @apply bg-PositionBtn;
+}
+.button:focus {
+    @apply outline-none;
+}
+.button {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6b8dd6, #8e37d7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}

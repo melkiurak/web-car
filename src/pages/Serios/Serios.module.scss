@@ -1,0 +1,27 @@
+.serios{
+    @apply overflow-y-auto h-auto  max-h-serios bg-SeriosBlack mr-10 px-10;
+    .serio{
+        @apply text-white;
+        p{
+            @apply text-lg  font-medium ;
+        }
+    }
+}
+.models{
+    @apply grid grid-cols-5 gap-12 py-10;  
+}
+.model{
+    @apply rounded-2xl bg-black text-WhiteGray flex flex-col justify-between w-serios gap-3;
+    h2{
+        @apply text-2xl;
+    }
+    h3{
+        @apply pb-9 text-xl;
+    }
+    h2,p,h3{
+       @apply pl-10;
+    }
+    img{
+        @apply rounded-tl-2xl rounded-tr-2xl h-60;
+    }
+}

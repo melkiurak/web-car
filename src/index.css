@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Lexend+Deca:regular,500);
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Убираем внутренние отступы */
+ul,
+ol {
+  padding: 0;
+}
+h1{
+  @apply text-3xl;
+}
+h2{
+  @apply text-2xl;
+}
+h3{
+  @apply pb-9 text-xl;
+}
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/*Ссылки*/
+a{
+  text-decoration: none;
+}
+
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  overflow: hidden;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: #0F0D2F;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul,
+ol {
+  list-style: none;
+}
+
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* Убираем фон прокрутки */
+::-webkit-scrollbar {
+  background-color: transparent; /* Прозрачный фон */
+}
+
+/* Изменяем цвет и размер полосы прокрутки */
+::-webkit-scrollbar-thumb {
+  background-color: #37336b; /* Цвет полосы прокрутки */
+  border-radius: 10px; /* Радиус скругления углов */
+}
+
+/* Изменяем размер полосы прокрутки */
+::-webkit-scrollbar-track {
+  width: 8px; /* Ширина полосы прокрутки */
+}
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
